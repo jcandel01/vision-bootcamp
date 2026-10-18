@@ -2,8 +2,8 @@
 
 Repaso práctico e intensivo de visión por computador aplicada a vídeo: teoría + código ejecutable, desde PyTorch y
 YOLO hasta tracking multiobjeto, Re-Identification, homografías, análisis temporal, optimización de inferencia y
-puesta en producción. Termina con un **proyecto propio** (detección → tracking → ReID → homografía → datos
-estructurados → optimización) sobre vídeo real, orientado a analítica deportiva y de personas.
+puesta en producción. Todo ello lo aplico en un **proyecto propio** sobre clips de fútbol (detección → tracking →
+equipos → homografía al campo → métricas): **[football-broadcast-analytics](https://github.com/jcandel01/football-broadcast-analytics)**.
 
 ---
 
@@ -61,9 +61,9 @@ Prioridad: ⭐⭐⭐ imprescindible · ⭐⭐ importante · ⭐ si da tiempo
 |---|---|---|
 | 0:00–2:30 | `10_optimizacion` — profiling, ONNX, CoreML/TensorRT, FP16/INT8, pipeline | ⭐⭐⭐ |
 | 2:30–3:30 | `11_produccion` — código modular, FastAPI, Docker, MLOps | ⭐⭐ |
-| 3:30–7:30 | `12_proyecto_final` — pipeline completo sobre tu vídeo + evaluación | ⭐⭐⭐ |
+| 3:30–7:30 | Proyecto: [football-broadcast-analytics](https://github.com/jcandel01/football-broadcast-analytics) — pipeline completo sobre vídeo de fútbol | ⭐⭐⭐ |
 
-**Si solo tienes 2 días:** Día 1 = 00, 02 (rápido), 03, 05, 06. Día 2 = 07, 08, 10, 12 (versión corta).
+**Si solo tienes 2 días:** Día 1 = 00, 02 (rápido), 03, 05, 06. Día 2 = 07, 08, 10 y el proyecto.
 Los notebooks 01, 04 y 09 léelos en diagonal.
 
 ---
@@ -72,7 +72,7 @@ Los notebooks 01, 04 y 09 léelos en diagonal.
 
 ```
 NN_tema/NN_tema.ipynb   ← un notebook por módulo (teoría + código + ejercicios ✍️)
-vision_utils/           ← código compartido (soluciones de referencia, reutilizadas en 07 y 12):
+vision_utils/           ← código compartido (soluciones de referencia, reutilizadas en 07):
   synthetic.py          escena sintética con GT: cruces, oclusiones, desapariciones, embeddings
   mot_metrics.py        MOTA, IDF1 y HOTA implementadas desde cero (léelo: ~130 líneas)
   tracker.py            Kalman + húngaro: SORT / ByteTrack / + ReID
