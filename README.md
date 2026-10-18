@@ -11,7 +11,7 @@ estructurados → optimización) sobre vídeo real, orientado a analítica depor
 
 Cada carpeta tiene **un notebook Jupyter** (`NN_nombre.ipynb`) con:
 - Teoría explicada desde cero (intuición → fórmula → código).
-- Celdas ejecutables. Las marcadas ✍️ **EJERCICIO** son para que las implementes tú (la solución está justo debajo, plegada en una celda `# SOLUCIÓN`; intenta no mirarla).
+- Celdas ejecutables. Las secciones marcadas ✍️ **EJERCICIO** son implementaciones desde cero (IoU, NMS, Kalman, SORT, DLT…), en la celda `# SOLUCIÓN` que las acompaña.
 
 Abre Jupyter con:
 ```bash
@@ -82,9 +82,8 @@ vision_utils/           ← código compartido (soluciones de referencia, reutil
 data/                   ← pesos, vídeos y salidas
 ```
 
-Las soluciones de los ejercicios están en celdas `# SOLUCIÓN` **plegadas** justo debajo de cada ejercicio
-(en JupyterLab aparecen como "…": haz clic para desplegar). Si ejecutas todo de corrido funciona igual, porque la
-solución redefine la función.
+Las implementaciones de los ejercicios están en celdas `# SOLUCIÓN` **plegadas** (en JupyterLab aparecen como "…":
+haz clic para desplegar).
 
 ---
 
