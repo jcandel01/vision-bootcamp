@@ -34,37 +34,32 @@ Regla de oro: **no leas en pasivo**. Ejecuta, cambia parámetros, mira qué se r
 
 ---
 
-## Plan (10 h/día)
+## Contenido
 
-Prioridad: ⭐⭐⭐ imprescindible · ⭐⭐ importante · ⭐ si da tiempo
+### Fundamentos: PyTorch, YOLO, detección y datos
+| Notebook | Temas |
+|---|---|
+| `00_setup` | entorno, Jupyter, pesos y vídeos (opcional: cada notebook se prepara solo) |
+| `01_imagen_video` | OpenCV, imagen como tensor, vídeo, FFmpeg |
+| `02_pytorch` | tensores, autograd, bucle de entrenamiento, CNN, transfer learning |
+| `03_deteccion` | IoU ✍️, NMS ✍️, mAP, YOLO por dentro, Ultralytics, fine-tuning, DETR |
+| `04_segmentacion_pose` | segmentación, SAM, pose, OKS |
+| `05_datasets` | formatos, CVAT/Roboflow, leakage, limpieza ✍️ |
 
-### Día 1 — Refresco de PyTorch + YOLO, detección y datos
-| Horas | Notebook | Prioridad |
-|---|---|---|
-| 0:00–0:30 | `00_setup` — entorno, Jupyter, pesos y vídeos (opcional: cada notebook se prepara solo) | ⭐⭐⭐ |
-| 0:30–1:30 | `01_imagen_video` — OpenCV, imagen como tensor, vídeo, FFmpeg | ⭐⭐ |
-| 1:30–3:30 | `02_pytorch` — tensores, autograd, bucle de entrenamiento, CNN, transfer learning | ⭐⭐⭐ |
-| 3:30–7:00 | `03_deteccion` — IoU ✍️, NMS ✍️, mAP, YOLO por dentro, Ultralytics, fine-tuning, DETR | ⭐⭐⭐ |
-| 7:00–8:30 | `04_segmentacion_pose` — segmentación, SAM, pose, OKS | ⭐⭐ |
-| 8:30–10:00 | `05_datasets` — formatos, CVAT/Roboflow, leakage, limpieza ✍️ | ⭐⭐⭐ |
+### Tracking, identidades y geometría
+| Notebook | Temas |
+|---|---|
+| `06_tracking` | Kalman ✍️, húngaro, SORT desde cero ✍️, ByteTrack/OC-SORT/BoT-SORT, MOTA/IDF1/HOTA |
+| `07_reid` | embeddings, distancia coseno, triplet loss, re-link de tracklets ✍️ |
+| `08_geometria` | cámara pinhole, calibración, homografía DLT ✍️, vista cenital, multicámara |
+| `09_temporal` | trayectorias, suavizado, velocidad, interacciones, acciones |
 
-### Día 2 — El núcleo del puesto: tracking, identidades, geometría
-| Horas | Notebook | Prioridad |
-|---|---|---|
-| 0:00–4:00 | `06_tracking` — Kalman ✍️, húngaro, SORT desde cero ✍️, ByteTrack/OC-SORT/BoT-SORT, MOTA/IDF1/HOTA | ⭐⭐⭐ |
-| 4:00–6:00 | `07_reid` — embeddings, distancia coseno, triplet loss, re-link de tracklets ✍️ | ⭐⭐⭐ |
-| 6:00–8:30 | `08_geometria` — cámara pinhole, calibración, homografía DLT ✍️, vista cenital, multicámara | ⭐⭐ |
-| 8:30–10:00 | `09_temporal` — trayectorias, suavizado, velocidad, interacciones, acciones | ⭐⭐ |
-
-### Día 3 — Rendimiento, producción y proyecto
-| Horas | Notebook | Prioridad |
-|---|---|---|
-| 0:00–2:30 | `10_optimizacion` — profiling, ONNX, CoreML/TensorRT, FP16/INT8, pipeline | ⭐⭐⭐ |
-| 2:30–3:30 | `11_produccion` — código modular, FastAPI, Docker, MLOps | ⭐⭐ |
-| 3:30–7:30 | Proyecto: [football-broadcast-analytics](https://github.com/jcandel01/football-broadcast-analytics) — pipeline completo sobre vídeo de fútbol | ⭐⭐⭐ |
-
-**Si solo tienes 2 días:** Día 1 = 00, 02 (rápido), 03, 05, 06. Día 2 = 07, 08, 10 y el proyecto.
-Los notebooks 01, 04 y 09 léelos en diagonal.
+### Rendimiento, producción y proyecto
+| Notebook | Temas |
+|---|---|
+| `10_optimizacion` | profiling, ONNX, CoreML/TensorRT, FP16/INT8, pipeline |
+| `11_produccion` | código modular, FastAPI, Docker, MLOps |
+| [football-broadcast-analytics](https://github.com/jcandel01/football-broadcast-analytics) | proyecto: pipeline completo sobre vídeo de fútbol |
 
 ---
 
