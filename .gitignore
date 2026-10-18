@@ -1,0 +1,21 @@
+# Datos y pesos: se descargan con 00_setup/00_setup.ipynb
+data/
+*.pt
+*.onnx
+*.engine
+*.mlpackage/
+runs/
+outputs/
+
+# Python / Jupyter
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Oferta de trabajo (privada)
+OFERTA.md
